@@ -3,9 +3,6 @@ let input = document.getElementById('city');
 let result = document.getElementById('result');
 let dgree = document.getElementById('dgree');
 
-const apiKey = "02438250de1148b1883211155242304";
-const apiUrl = "http://api.weatherapi.com/v1/forecast.json?key=02438250de1148b1883211155242304&q=Jeddah&days=1&aqi=no&alerts=no";
-
 button.addEventListener("click", function(){
     let city = input.value;
     result.innerText = "Getting result...";
@@ -14,7 +11,7 @@ button.addEventListener("click", function(){
 })
 
 async function getWeatherData(city){
-    let apiUrl = "http://api.weatherapi.com/v1/forecast.json?key=02438250de1148b1883211155242304&q="+city+"&days=1&aqi=no&alerts=no";
+    let apiUrl = "https://api.weatherapi.com/v1/forecast.json?key=02438250de1148b1883211155242304&q="+city+"&days=1&aqi=no&alerts=no";
     let response = await fetch(apiUrl);
     let responseObj = await response.json();
     console.log(responseObj.location);
