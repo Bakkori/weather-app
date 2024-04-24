@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+
+    background-color: aliceblue;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    height: 20px;
+    padding: 2px;
+
+}
+
+#dgree {
+    font-size: 30px;
+}
+
+button {
+    margin: 1px;
+    background-color: goldenrod;
+    padding: 5px 5px;
+    border: 1px solid aliceblue;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    border-radius: 20px;
+  }
